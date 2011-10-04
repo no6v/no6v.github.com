@@ -1,6 +1,7 @@
 body {
 	font-family: Verdana, sans-serif;
 	margin: 0;
+	background-color: #fab33d;
 }
 
 div#wrapper {
@@ -30,34 +31,14 @@ div#container {
 	text-decoration: none;
 }
 
-.radius{
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-}
-
-.shadow{
-	border: solid 1px white;
-	-moz-box-shadow: 1px 2px 3px #777;
-	-webkit-box-shadow: 1px 2px 3px #777;
-}
-
-div#photo {
-	background: url("./top2.png") no-repeat;
-	width: 606px;
-	height: auto;
-	margin: 0;
-}
-
-
 div#left {
-	background: url(./side_l2.png) repeat-y;
+	background: url(side_l2.png) repeat-y;
 	width: 162px;
 	margin: 0;
 }
 
 div#top {
-	background: url(./top2.png) no-repeat;
+	background: url(top2.png) no-repeat;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
@@ -72,31 +53,39 @@ div#main {
 }
 
 div#right {
-	background: url(./side_r2.png) repeat-y;
+	background: url(side_r2.png) repeat-y;
 	width: 162px;
 	margin: 0;
 }
 
 #main h3 {
-	background: -webkit-gradient(linear, left top, right top, from(#fff), to(#ea1212));
-	background: -moz-linear-gradient(top left, #fff, #ea1212);
+	background: -webkit-gradient(linear, left top, right top, from(#fab33d), to(#ea1212));
+	background: -moz-linear-gradient(top left, #fab33d, #ea1212);
 	height: 30px;
 	padding: 7px 0 0 20px;
 	margin: 15px 0 0 0;
 	font-size: 20px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px 30px 0 0;
+	-moz-border-radius: 30px 30px 0 0;
+}
 }
 
 #main h4 {
-	margin: 12px 0 0 1.5em;
+	margin: 12px 0 0 0;
 	font-size: 16px;
 	font-weight: bold;
 }
 
 #main h5 {
-	background: -webkit-gradient(linear, left top, right top, from(#fff), to(#ea1212));
-	background: -moz-linear-gradient(top left, #fff, #ea1212);
-	margin: 12px 0 0 2em;
+	background: -webkit-gradient(linear, left top, right top, from(#fab33d), to(#ea1212));
+	background: -moz-linear-gradient(top left, #fab33d, #ea1212);
+	padding: 0 0 0 7px;
+	margin: 12px 0 0 0;
 	font-size: 14px;
+	border-radius: 14px;
+	-webkit-border-radius: 14px 14px 0 0;
+	-moz-border-radius: 14px 14px 0 0;
 }
 
 div#map {
@@ -113,13 +102,8 @@ div#map {
 	text-decoration: underline;
 }
 
-#main p {
-	padding: 0 20px;
-	line-height: 160%;
-}
-
 #main ul {
-	list-style-type: square;
+	list-style-type: disc;
 	padding-right: 10px;
 	line-height: 160%;
 }
@@ -137,12 +121,13 @@ div#map {
 
 #main dd {
 	padding-left: 15px;
-	margin-left: 0 0 50px 0;
+	margin-left: 50px;
 }
 
 #footer {
-	background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(0.5, #ea1212), to(#fff));
-	background: -moz-linear-gradient(top left, #fff, #ea1212, #fff);
+	background: -webkit-gradient(linear, left top, right top, from(#fab33d), color-stop(0.5, #ea1212), to(#fab33d));
+	background: -moz-linear-gradient(top left, #fab33d, #ea1212, #fab33d);
 	text-align: center;
 	color: #1a1516;
+	font-weight: bold;
 }
