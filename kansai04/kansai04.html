@@ -3,7 +3,7 @@
   <head>
     <meta content='text/xhtml; charset=utf-8' http-equiv='Content-Type' />
     <title>関西Ruby会議04 - Regional RubyKaigi</title>
-    <link href="kansai04.css?1318256145" media="screen" rel="stylesheet" type="text/css" />
+    <link href="kansai04.css?1318333386" media="screen" rel="stylesheet" type="text/css" />
     <style type='text/css'><!-- @media print {div#user-bar {display: none}} --></style>
     <script src="jquery.js?1314772016" type="text/javascript"></script>
     <meta content='initial-scale=1.0, user-scalable=no' name='viewport' />
@@ -13,6 +13,8 @@
     <script type='text/javascript'>
       //<![CDATA[
         $(document).ready(function(){
+          var height = $("#container")[0].scrollHeight;
+          $("#container").height(height + (192 - (height % 192 || 192)));
           with(google.maps){
             var pos = new LatLng(34.63827, 135.411279);
             var map = new Map(document.getElementById("map"), {
@@ -133,12 +135,153 @@
                 <tr>
                   <td>
                     <img src='attendee_taiyou.png' />
+                    <ul class='attendee'>
+                      <li>
+                        <a href='attendee_kyoto_tower.png'>京都タワー</a>
+                      </li>
+                      <li>
+                        <a href='attendee_ise.png'>伊勢</a>
+                      </li>
+                      <li>
+                        <a href='attendee_maiko.png'>舞妓</a>
+                      </li>
+                      <li>
+                        <a href='attendee_port_tower.png'>ポートタワー</a>
+                      </li>
+                      <li>
+                        <a href='attendee_biwako.png'>琵琶湖</a>
+                      </li>
+                      <li>
+                        <a href='attendee_panda.png'>パンダ</a>
+                      </li>
+                      <li>
+                        <a href='attendee_konamon.png'>粉もん</a>
+                      </li>
+                      <li>
+                        <a href='attendee_mikan.png'>みかん</a>
+                      </li>
+                      <li>
+                        <a href='attendee_tsutenkaku.png'>通天閣</a>
+                      </li>
+                      <li>
+                        <a href='attendee_shika.png'>鹿</a>
+                      </li>
+                      <li>
+                        <a href='attendee_taiyou.png'>太陽の塔</a>
+                      </li>
+                      <li>
+                        <a href='attendee_daibutsu.png'>大仏</a>
+                      </li>
+                      <li>
+                        <a href='attendee_tako.png'>蛸</a>
+                      </li>
+                      <li>
+                        <a href='attendee_daimonji.png'>大文字</a>
+                      </li>
+                      <li>
+                        <a href='attendee_hikone.png'>彦根</a>
+                      </li>
+                    </ul>
                   </td>
                   <td>
                     <img src='speaker_shika.png' />
+                    <ul class='speaker'>
+                      <li>
+                        <a href='speaker_kyoto_tower.png'>京都タワー</a>
+                      </li>
+                      <li>
+                        <a href='speaker_ise.png'>伊勢</a>
+                      </li>
+                      <li>
+                        <a href='speaker_maiko.png'>舞妓</a>
+                      </li>
+                      <li>
+                        <a href='speaker_port_tower.png'>ポートタワー</a>
+                      </li>
+                      <li>
+                        <a href='speaker_biwako.png'>琵琶湖</a>
+                      </li>
+                      <li>
+                        <a href='speaker_panda.png'>パンダ</a>
+                      </li>
+                      <li>
+                        <a href='speaker_konamon.png'>粉もん</a>
+                      </li>
+                      <li>
+                        <a href='speaker_mikan.png'>みかん</a>
+                      </li>
+                      <li>
+                        <a href='speaker_tsutenkaku.png'>通天閣</a>
+                      </li>
+                      <li>
+                        <a href='speaker_shika.png'>鹿</a>
+                      </li>
+                      <li>
+                        <a href='speaker_taiyou.png'>太陽の塔</a>
+                      </li>
+                      <li>
+                        <a href='speaker_daibutsu.png'>大仏</a>
+                      </li>
+                      <li>
+                        <a href='speaker_tako.png'>蛸</a>
+                      </li>
+                      <li>
+                        <a href='speaker_daimonji.png'>大文字</a>
+                      </li>
+                      <li>
+                        <a href='speaker_hikone.png'>彦根</a>
+                      </li>
+                    </ul>
                   </td>
                   <td>
                     <img src='staff_daibutsu.png' />
+                    <ul class='staff'>
+                      <li>
+                        <a href='staff_kyoto_tower.png'>京都タワー</a>
+                      </li>
+                      <li>
+                        <a href='staff_ise.png'>伊勢</a>
+                      </li>
+                      <li>
+                        <a href='staff_maiko.png'>舞妓</a>
+                      </li>
+                      <li>
+                        <a href='staff_port_tower.png'>ポートタワー</a>
+                      </li>
+                      <li>
+                        <a href='staff_biwako.png'>琵琶湖</a>
+                      </li>
+                      <li>
+                        <a href='staff_panda.png'>パンダ</a>
+                      </li>
+                      <li>
+                        <a href='staff_konamon.png'>粉もん</a>
+                      </li>
+                      <li>
+                        <a href='staff_mikan.png'>みかん</a>
+                      </li>
+                      <li>
+                        <a href='staff_tsutenkaku.png'>通天閣</a>
+                      </li>
+                      <li>
+                        <a href='staff_shika.png'>鹿</a>
+                      </li>
+                      <li>
+                        <a href='staff_taiyou.png'>太陽の塔</a>
+                      </li>
+                      <li>
+                        <a href='staff_daibutsu.png'>大仏</a>
+                      </li>
+                      <li>
+                        <a href='staff_tako.png'>蛸</a>
+                      </li>
+                      <li>
+                        <a href='staff_daimonji.png'>大文字</a>
+                      </li>
+                      <li>
+                        <a href='staff_hikone.png'>彦根</a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
               </table>
