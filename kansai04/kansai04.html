@@ -3,7 +3,7 @@
   <head>
     <meta content='text/xhtml; charset=utf-8' http-equiv='Content-Type' />
     <title>関西Ruby会議04 - Regional RubyKaigi</title>
-    <link href="kansai04.css?1318346450" media="screen" rel="stylesheet" type="text/css" />
+    <link href="kansai04.css?1318512761" media="screen" rel="stylesheet" type="text/css" />
     <style type='text/css'><!-- @media print {div#user-bar {display: none}} --></style>
     <script src="jquery.js?1314772016" type="text/javascript"></script>
     <meta content='initial-scale=1.0, user-scalable=no' name='viewport' />
@@ -13,8 +13,11 @@
     <script type='text/javascript'>
       //<![CDATA[
         $(document).ready(function(){
-          var height = $("#container")[0].scrollHeight;
-          $("#container").height(height + (192 - (height % 192 || 192)));
+          var container_height = $("#container")[0].scrollHeight;
+          var main_height = $("#main")[0].scrollHeight;
+          var delta = 192 - (container_height % 192 || 192);
+          $("#container").height(container_height + delta);
+          $("#main").height(main_height + delta);
           with(google.maps){
             var pos = new LatLng(34.63827, 135.411279);
             var map = new Map(document.getElementById("map"), {
@@ -56,7 +59,7 @@
             </ul></li>
             <li>参加費: 無料</li>
             <li>事前登録: 不要</li>
-            <li>懇親会: 要事前登録 (準備でき次第お知らせします)<ul>
+            <li>懇親会: <a href="#party">要事前登録</a><ul>
             <li>11月11日 関西オープンソース2011主催 懇親会</li>
             <li>11月12日 Ruby関西主催 懇親会</li>
             </ul></li>
@@ -291,6 +294,18 @@
                 <a href='http://yozvox.web.infoseek.co.jp/96D1954D94C5.html'>Y.OzFont毛筆版</a>
                 を使用しています。
               </div>
+            </div>
+            <div id='party'>
+              <h3>懇親会</h3>
+              <dl>
+                <dt>11月11日(金) 関西オープンソース2011主催 懇親会</dt>
+                <dd>情報が公開され次第リンクします。</dd>
+                <dt>11月12日(土) Ruby関西主催 懇親会</dt>
+                <dd>
+                  ATND にて受け付けています。
+                  <a href="http://atnd.org/events/20917">関西Ruby会議04 懇親会</a>
+                </dd>
+              </dl>
             </div>
             <div id='access'>
               <h3>Map</h3>
